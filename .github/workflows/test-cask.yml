@@ -1,0 +1,22 @@
+name: Test Tap
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  audit:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit casks when present
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ls Casks/*.rb >/dev/null 2>&1; then
+            brew audit --cask Casks/*.rb
+          else
+            echo "No casks yet; skipping audit."
+          fi
