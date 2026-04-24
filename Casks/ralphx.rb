@@ -5,10 +5,10 @@ cask "ralphx" do
   sha256 arm:   "7b5fcffe4bd179ff9f41d3d0e5fd371345c355af5191489b57cba1ffb649fe59",
          intel: "59920dcaa21f4ef35be7835ee1dd7b711071112eb864ac0d4abcc0ac580e58cd"
 
-  url "https://github.com/aigentive/ralphx-releases/releases/download/v#{version}/RalphX_#{version}_#{arch}.dmg"
+  url "https://github.com/aigentive/ralphx.app/releases/download/v#{version}/RalphX_#{version}_#{arch}.dmg"
   name "RalphX"
   desc "Native Mac GUI for autonomous AI development"
-  homepage "https://github.com/aigentive/ralphx-releases"
+  homepage "https://github.com/aigentive/ralphx.app"
   auto_updates true
 
   depends_on formula: "node"
