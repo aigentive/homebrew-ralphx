@@ -1,9 +1,9 @@
 cask "ralphx" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "0.72.0"
-  sha256 arm:   "6b4316d57d4ba1ea4f50e24d1657fc3f177504c48dd7ce8ef5db20c46e0c9420",
-         intel: "40d1d6c199a0d438d5a4f02a88995c7cce116123a304515b85c56e9415fecc14"
+  version "0.73.0"
+  sha256 arm:   "b09e2829c3dd91933fb8de588380f302837488fe656db2f69544f00e8e2568f4",
+         intel: "e7ffb1140f7f2d019a22aa864f73158935a1f4e8a69cdb433b8ac010d5f75878"
 
   url "https://github.com/aigentive/ralphx.app/releases/download/v#{version}/RalphX_#{version}_#{arch}.dmg"
   name "RalphX"
